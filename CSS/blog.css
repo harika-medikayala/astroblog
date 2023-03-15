@@ -1,0 +1,18 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+#Header{
+    background-image: url(../asset/space.png.crdownload),url(../asset/astronaut.jpg);
+    background-size: 320px 150% 800px;
+    background-position: rught bottom,-250px 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    padding-top: 200px;
+    font-size: 20px;
+    letter-spacing: 20px;
+    text-align: center;
+    transition: opacity 0.5s,font-size 2s, background-size 5s,background-position 10s;
+    box-shadow: 0px 10px 5px black;
+}

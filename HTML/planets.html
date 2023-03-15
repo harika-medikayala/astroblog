@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallary-Planets </title>
+    <script src="../JS/planets.js" defer></script>
+    <link rel="stylesheet" href="./planets.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary Of Planets</h1>
+        <input class="b" id="left" type="button" value="<" onclick="dec()">
+        <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/blog.html"><li class="mli">HOME</li></a>
+            <a href="../HTML/info.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Objects
+                <ul id="sublist">
+                    <li class="sli">Planets</li>
+                    <li class="sli">Stars</li>
+                    <li class="sli">Blackhole</li>
+                    <li class="sli">Astroids</li>
+                    <li class="sli">Sattellite</li>
+                </ul>
+            </li>
+            <a href="#"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openimg(1,'Mercury', 'Mercury is the smallest planet in the solar system')">
+        <img class="a" onclick="openimg(2,'Venus', 'Mercury is the smallest planet in the solar system')">
+        <img class="a" onclick="openimg(3,'Earth')">
+        <img class="a" onclick="openimg(4,'Mars')">
+        <img class="a" onclick="openimg(5,'Jupiter')">
+        <img class="a" onclick="openimg(6,'Saturn')">
+        <img class="a" onclick="openimg(7,'Uranus')">
+        <img class="a" onclick="openimg(8,'Neptune')">
+        <img class="a" onclick="openimg(9,'Pluto')">
+        <img class="a" onclick="openimg(10,'Moon')">
+    </div>
+    <div id="subWindow" style="display:none;">
+        <h1 id="close" onclick="closeimg()">X</h1>
+        <img id="subWindowImg" src="../ASSETS/pics/planets/1.jpg">
+        <h1 id="imageHeading">Heading</h1>
+        <p id="imgpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, quaerat mini</p>
+    </div>
+</body>
+</html>

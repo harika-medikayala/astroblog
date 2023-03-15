@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astro-Blog</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="../ASTROBLOG/JS/index.js" defer></script>
+</head>
+<body>
+    <div id="outerdiv">
+      <div id="innerdiv"> 
+         <h1 id="Heading">Login</h1>
+         <form>
+            <div id="emaildiv">
+                <input class="in" id ="userEmail" type="email" placeholder="Enter email">
+            </div>
+            <div id="passdiv">
+                <input class="=in" id ="userPass" type="password" placeholder="Emter password">
+              <img id="visible" src="./ASSETS/logo/close.png" onmousedown="visiblePass()" onmouseup="inVisiblePass()">
+            </div>
+            <span id="status"></span>
+            <input id="loginbut" type="button" value="Login" onclick="accesstopage()">
+            </form>
+      </div>
+    </div>
+</body>
+</html>
